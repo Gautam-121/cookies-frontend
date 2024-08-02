@@ -2,14 +2,14 @@ import React, { useEffect } from 'react';
 
 const App = () => {
   const setCookie = async () => {
-    await fetch('http://localhost:8081/set-cookie', {
+    await fetch('https://cookies-backend.onrender.com/set-cookie', {
       method: 'GET',
       credentials: 'include' // Include credentials (cookies)
     });
   };
 
   const getCookie = async () => {
-    const response = await fetch('http://localhost:8081/get-cookie', {
+    const response = await fetch('https://cookies-backend.onrender.com/get-cookie', {
       method: 'GET',
       credentials: 'include' // Include credentials (cookies)
     });
